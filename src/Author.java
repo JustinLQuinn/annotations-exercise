@@ -17,16 +17,13 @@ public class Author extends Person {
      */
     @Deprecated
     public List<String> getBooks() { return books; }
-
     public List<String> publishedBooks() {
         return books;
     }
-
+@SuppressWarnings("unchecked")
     public void addBook(String book) {
         books.add(book);
     }
-
-//    @Override
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
